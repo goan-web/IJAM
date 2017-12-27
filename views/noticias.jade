@@ -1,0 +1,39 @@
+extends layout_app
+
+block header
+	header.header.clearfix
+		nav
+			ul.nav.nav-pills.pull-right
+				if noticias
+					<li role="presentation"><a href="/">IJAM</a></li>
+					<li role="presentation"><a href="/settings">Settings</a></li>
+					<li role="presentation"><a href="/settings/register">Register Admin</a></li>
+					<li role="presentation"><a href="/settings/inscripciones">Inscripciones</a></li>
+					<li role="presentation"><a href="/settings/noticias">Noticias</a></li>
+					<li role="presentation"><a href="/settings/logout">Cerrar Sessión</a></li>
+				else
+					<li role="presentation"><a href="/">IJAM</a></li>
+
+
+block content
+	h2 Registro de Noticias
+	p mantener actualizados las noticias
+	section.col-lg-5.col-md-4.col-sm-6.col-xs-12.col-md-offset-4
+		form(action='/settings/noticias' enctype="multipart/form-data" method="post")
+			div.form-group
+				label Titulo
+				input(type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Titulo" name="titulo")
+			div.form-group		
+				label Fecha
+				input(type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Date" name="fecha")
+
+			div.form-group
+				label Imagen
+				input(type="file" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="insert img" name="image")
+			div.form-group		
+				label Descripción
+				textarea(class="form-control" rows="4" placeholder="Descripcion.." name="descripcion")
+			button(type="submit" class="btn btn-primary") Ingresar Noticia
+
+
+					

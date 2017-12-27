@@ -1,0 +1,132 @@
+extends layout
+
+
+block content
+	section.contenedor <!-- Contenedor -->
+
+		section#banner <!-- banner -->
+
+			article.opciones <!-- opciones -->
+
+				figure.item.color_opcion1 <!-- item1 -->
+					a(href="#")
+						img(src="/images/svg/conociendo-icon.svg" width="80" alt="conociendo.icon")
+						h3 Conociendo el <br>Instituto
+
+				figure.item.color_opcion2
+					a(href="#")
+						img(src="/images/svg/carreras-icon.svg" width="80"  alt="conociendo.icon")
+						h3 Carreras Profesionales <br>Técnicas
+				figure.item.color_opcion3
+					a(href="#")
+						img(src="/images/svg/educacion-icon.svg" width="80" alt="conociendo.icon")
+						h3 Educación <br>Online
+
+			article.banner <!-- imagen de 748px x 376px -->
+
+				div.sheet-slider <!--Sheet Slider-->
+					input(id="s1" class="sheet" type="radio" name="slide1" checked)
+					input(id="s2" class="sheet" type="radio" name="slide1")
+					input(id="s3" class="sheet" type="radio" name="slide1")
+					input(id="s4" class="sheet" type="radio" name="slide1")
+
+					ul
+						li.tab <!--imagenes-->
+							img(src="images/banner/banner-image1.jpg")
+							div
+								h3 
+								span 
+									a 
+
+						li.tab <!--imagenes-->
+							img(src="images/banner/banner-image2.jpg")
+							div
+								h3 
+								span 
+									a 
+
+						li.tab <!--imagenes-->
+							img(src="images/banner/banner-image3.jpg")
+							div
+								h3 
+								span  
+									a 
+
+						li.tab <!--imagenes-->
+							img(src="images/banner/banner-image4.jpg")
+							div
+								h3 
+								span 
+									a 
+
+
+					ul
+
+					div.sh-btns <!--botones-->
+						label(for="s1")
+						label(for="s2")
+						label(for="s3")
+						label(for="s4")
+					div
+
+					div.sh-arrows <!--flechas-->
+						label(for="s1")
+						label(for="s2")
+						label(for="s3")
+						label(for="s4")
+					div
+				div
+
+		section#carreras <!-- Carreras -->
+
+			article <!-- carrier_administracion -->
+				figure.color_carrier1
+					a
+						img(src="/images/png/administracion.png" width="100" alt="computacion e informatica.icon")
+					div.titulo2 
+						h2.title-parche Administración <br> de Empresas
+
+			article <!-- carrier_contabilidad  -->
+				figure.color_carrier2
+					a
+						img(src="/images/svg/contabilidad-icon.svg" width="100"  alt="contabilidad-icon")
+					div.titulo2
+						h2.parchecito Contabilidad
+
+			article <!-- carrier_computacion -->
+				figure.color_carrier3
+					a
+						img(src="/images/png/computacion.png" width="100" alt="computacion e informatica.icon")
+					div.titulo2 
+						h2.title-parche Computación e <br> Informática
+
+		section#inscripciones<!-- inscripciones -->
+			include form_contacto.jade
+
+		section#post<!-- Post -->
+			article <!-- Extension -->
+				h2 Extensión Profesional
+				div.extension <!-- primer_post -->
+					figure
+						img(src="images/banner/banner-image4.jpg")
+					
+					figure
+						img(src="/images/jpg/officce-image.jpg")
+					
+
+			if noticias	
+			article<!-- Noticias -->
+				h2 Noticias
+				div.noticias
+					each doc in noticias
+						figure
+							img(src="#{doc.cover}")
+						ul.descripcion <!-- Item_descripcion -->
+							h3 #{doc.titulo}
+							p #{doc.fecha}
+							p #{doc.descripcion}
+		
+
+	
+
+

@@ -1,0 +1,38 @@
+extends layout_app
+
+block header
+	header.header.clearfix
+		nav
+			ul.nav.nav-pills.pull-right
+				if docs
+					<li role="presentation"><a href="/">IJAM</a></li>
+					<li role="presentation"><a href="/settings">Settings</a></li>
+					<li role="presentation"><a href="/settings/register">Register Admin</a></li>
+					<li role="presentation"><a href="/settings/inscripciones">Inscripciones</a></li>
+					<li role="presentation"><a href="/settings/noticias">Noticias</a></li>
+					<li role="presentation"><a href="/settings/logout">Cerrar Sessión</a></li>
+				else
+					<li role="presentation"><a href="/">IJAM</a></li>
+
+block content
+	section
+		h2 USERS
+		P Lista de Administradores
+		article.pre-scrollable
+			if docs
+			table.table
+				thead.thead-inverse
+					tr
+						th Nombre
+						th Username
+						th Email
+						th Password
+				tbody
+				each user in docs
+					tr
+						th #{user.name}
+						th #{user.username}
+						th #{user.email}
+						th #{user.password2}
+
+

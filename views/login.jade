@@ -1,0 +1,18 @@
+extends layout_app
+
+block header
+	header.header.clearfix
+		nav
+			ul.nav.nav-pills.pull-right
+				<li role="presentation"><a href="/">IJAM</a></li>
+block content
+	section.col-lg-3.col-md-4.col-sm-6.col-xs-12.col-md-offset-4
+		h2.page-header Account Login
+		form(method="post" action="/settings/login")
+			div.form-group
+				label Username
+				input(type="text" class="form-control" name="username" placeholder="Username")
+			div.form-group
+				label Password
+				input(type="password" class="form-control" name="password" placeholder="Password")
+				button(type="submit" class="btn btn-default") Ingresar

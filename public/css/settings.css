@@ -1,0 +1,10 @@
+.users_scroll {
+  height: 85px;
+  width: 800px;
+  border: 1px solid #244776;
+  overflow-y: scroll;
+  margin: 20px 0;
+}
+.user_table {
+  height: auto;
+}

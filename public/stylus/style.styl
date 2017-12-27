@@ -1,0 +1,250 @@
+/*@import 'variables'*/
+/*@import 'mixins'*/
+
+
+/* estilos del cuerpo contenedor */
+opcion1 = #053269
+opcion2 = #365e92
+opcion3 = #688cc0
+
+azul = #244776
+verde = #81ba35
+anaranjado = #eb7617
+margen()
+	margin 0
+	padding 0 
+
+border_box = none
+
+/* aplicando diseño a los inputs */
+input_efecto()
+	font-family Arial
+	color #244776
+	font-size 0.9em
+	border none
+	padding 3px
+	border-radius 3px
+	box-shadow inset 0px 2px 4px 4px rgba(255,255,255,0.6)	
+
+body 
+	margen()
+	font-size 16px
+h1		
+	font-family 'Lobster', cursive
+/* seccion del banner */
+#banner
+	position relative
+	border border_box
+	display block
+	width 100%
+	height 10%
+	margin 10px 0
+
+#banner article
+	display inline-block
+/* posiciones */
+	
+.opciones
+	width 360px
+	height 380px
+.banner
+	margen()
+	width 748px
+	height 375px
+	position absolute
+.banner figure
+	margen()
+.item
+	box-shadow 3px 15px 17px rgba(0,0,0,0.6)
+	padding 0
+	margin auto
+.item a
+	margen()
+.item a img, h3
+	margin 0
+	display inline-block
+.item a img
+	padding 20px 0
+	margin 0 3% 0 10%
+.item a h3
+	color white
+	position absolute
+	margin-top 28px
+	width 55%
+	font-size 1.4em;
+/* colores de fondo de banner */
+.color_opcion1, .color_opcion2, .color_opcion3
+/*box-shadow 3px 15px 17px rgba(0,0,0,0.6)*/
+
+.color_opcion1
+	background opcion1
+.color_opcion2
+	background opcion2
+.color_opcion3
+	background opcion3
+	
+
+/* seccion de las carreras */
+#carreras 
+	padding 38px 0
+	width 100%
+	height 10%
+	border border_box
+
+
+#carreras article
+	margin 0 1% 0 1.8%
+	text-align center
+	display inline-block
+	width 30%
+
+
+#carreras article figure
+	margin-left auto
+	margin-right auto
+	width 85%
+	border-radius 50%
+	box-shadow 3px 15px 17px rgba(0,0,0,0.6)
+	padding 10% 0 20% 0
+#carreras article figure a img
+	width 100px
+	height 100px
+#carreras article div
+	height 65px
+	margin-left 60px
+.titulo2 h2
+	font-family 'Dosis'
+	text-align center
+	position absolute
+	font-size 1.8em
+	color white
+.title-parche
+	margin 10px 0 0 0
+.parchecito
+	margin 35px 0 0 10px
+	background none
+/* color de fondo de carreras */
+.color_carrier3
+	background #244776
+.color_carrier2
+	background #81BA35
+.color_carrier1
+	background #eb7617
+	
+/* Inscripciones */
+#inscripciones
+	background verde
+	color white
+	width 100%
+	height 236px
+	padding 0
+	border border_box
+.formulario
+	font-size 1.2em
+	box-shadow inset  671px 0px 0px 0px azul
+	width 71%
+	height 217px
+	padding 8px 0 10px 0
+.formulario ul
+	margin 15px 0
+	width 100%
+.formulario div
+	width 10px
+	height 0
+	margin -213px 0 0 670px
+.formulario li
+	margin 10px 0
+	display inline-block
+.formulario li input
+	input_efecto()
+.formulario label
+	margin 0 5px
+.efecto_triangulo
+	margin 5px 0 0 0;
+	border-left 110px solid azul
+	border-top 120px solid transparent
+	border-bottom 120px solid transparent
+.button
+	font-size 1.7em;
+	background-color verde
+	border none
+	color white
+	padding 15px 32px
+	text-align center
+	text-decoration none
+	display inline-block
+	margin 60px 2px 0 115px
+	cursor pointer
+    
+/* tamaños de input */
+.size_grande
+	input_efecto()
+	width 300px
+.size_mediano
+	input_efecto()
+	width 200px
+.size_chico
+	input_efecto()
+	width 90px
+	
+
+/* post maqueta */
+#post
+	color #244776
+	width 100%
+	height auto
+	border border_box
+	padding 40px 0
+#post article
+	padding 0
+	margin 0
+	display inline-block
+	width 50%
+	border border_box
+#post article div
+	width 100%
+	border border_box
+	height 425px
+	padding 15px 0
+
+#post article div figure, #post article div ul
+	margin 10px auto 0 auto
+	padding 0
+	display inline-block
+	border border_box
+	height 100px
+.extension
+	border 1px solid #fff
+	overflow-y: scroll
+.extension figure
+	width 100%
+.extension figure img
+	box-shadow 5px 7px 2px rgba(anaranjado,0.4)
+	border 3px solid anaranjado
+	margin-left 15%
+	width 350px
+	height 200px
+.noticias
+	font-family Dosis
+	border 1px solid #fff
+	overflow-y: scroll
+.descripcion
+	width 65%
+	float right
+.noticias figure img
+	box-shadow 5px 5px 5px rgba(0,0,0,0.6)
+	width 150px
+	height 100px
+	margin 15px 15px
+.descripcion p
+	font-size 1.1em
+	margin 5px 0 0 0
+
+
+
+
+
+
+
+
+

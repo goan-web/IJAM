@@ -1,0 +1,40 @@
+
+
+form.formulario(action='/', method='post') <!-- Formulario -->
+		ul
+			li
+				label(for="nombre") Nombre y Apellidos :
+				input(type="text" name="nombre" required id="nombre" size="45")
+		ul
+			li
+				label(for="carrera") Carrera :
+				select.size_grande(type="text" name="carrera" required id="carrera")
+					option(value="carrera1") Computación e Informática
+					option(value="carrera2") Contabilidad
+					option(value="carrera3") Administración de Empresas
+
+			
+				label(for="turno") Turno :
+				select.size_chico(type="text" name="turno" id="turno")
+					option(value="carrera1") Día
+					option(value="carrera2") Noche 
+	
+				label(for="sede") Sede :
+				select.size_chico(type="text" name="sede" id="carrera")
+					option(value="sede") Rioja
+
+		ul
+			li
+				label(for="email") email :
+				input(type="text" name="email" required id="email" size="29")
+			li
+				label(for="telefono") Telefono :
+				input(type="text" name="telefono" id="telefono" size="12")
+
+		div.efecto_triangulo
+						
+		div <!-- form_diseño -->
+			button.button(type="submit") Inscribirse
+
+
+

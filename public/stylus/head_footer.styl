@@ -1,0 +1,212 @@
+@import 'style'
+
+
+#cuerpo
+	margen()
+	width 100%
+.contenedor
+	margin-left auto
+	margin-right auto
+	width 1110px
+/* Encabezado de la pagina web */
+header
+	margin-left auto
+	margin-right auto
+	position relative
+	width 1110px
+	height 215px
+	border border_box
+
+@keyframes girar {
+	from {
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.girar
+	-webkit-animation: girar 5s linear infinite;
+	-moz-animation: girar 5s linear infinite;
+	-ms-animation: girar 5s linear infinite;
+	-o-animation: girar 5s linear infinite;
+	animation: girar 5s linear infinite;
+.girar:hover
+	-webkit-animation: girar 2s  linear infinite;
+	-moz-animation: girar 2s  linear infinite;
+	-ms-animation: girar 2s  linear infinite;
+	-o-animation: girar 2s  linear infinite;
+	animation: girar 2s  linear infinite;
+.red_social
+	position absolute
+	margin-left 765px
+	border border_box
+	width 350px
+.red_social li:hover
+	background azul
+	box-shadow 0 2px 1px 5px rgba(36,71,118,0.5)
+.red_social li:active
+	background anaranjado
+	padding 7px 10px
+	box-shadow 0 2px 1px 5px rgba(anaranjado,0.5)
+.red_social li
+	box-shadow 0 2px 1px 5px rgba(0,0,0,0.2)
+	padding 5px 8px
+	margin 0 10px
+	border-radius 50%
+	background azul
+	display inline-block
+header figure, nav
+	display inline-block
+	
+header figure
+	width 20%
+	margin 30px 0 0 -25px
+	padding 0
+	border border_box
+header figure a img
+	width 415px
+	height 210px
+.menu_bar
+	position absolute
+	background #244776
+nav
+	font-family 'Dosis'
+	font-weight bold
+	margin-top 182px
+	border border_box
+	float right 
+	width 60%
+
+nav ul
+	margen()
+nav ul li
+
+	font-size 1.3em
+	margin 0 10px 2px 0
+	display inline-block
+	position relative
+nav ul li:hover
+	box-shadow inset 0 5px 0 0 verde
+nav ul li a 
+	color azul
+	text-decoration none
+/* Pie de la pagina web */
+footer 
+	font-family 'Open-sans'
+	color white
+	margin 0
+	padding 18px 0
+	position relative
+	background #224776
+	width 100%
+
+
+.contactar 
+	padding 10px 0
+	width 50%
+	display inline-block
+
+.contactar figure
+	background opcion1
+	position absolute
+	margin -60px 0 0 40px
+	padding 0
+	width 250px
+	height 100px
+
+.contactar ul 
+	font-size 0.8em
+	border border_box
+
+.contactar p
+	position absolute
+	margin -25px 0 0 300px
+	padding 0
+	width 55%
+.contactar ul
+	margin 10px 0 0 0
+.contactar li
+	margin 0 10px
+	position relative
+	display inline-block
+
+
+@media screen and (max-width: 479px) and (min-width: 320px)
+	.contenedor
+		width 100%
+	header
+		width 100%
+		height 314px
+	.red_social
+		width 100%
+		margin 15px 0 0 -35px 
+		position relative
+	header figure
+		width 100%
+	header figure a img
+		width 320px
+		height auto
+		position relative
+		margin 0 0 0 25px
+	.menu_bar
+		width 100%
+		padding 12px 0
+	.menu_bar a img
+		float right
+		margin 0 25px
+	nav
+		margin-top 217px
+		width 100%
+		left -100%
+		
+		position absolute
+		z-index 1
+	nav ul li
+		font-size 1.1em
+		padding 7px 0
+		margin 0
+		background azul
+		display block
+		width 75%
+		border-bottom 1px solid rgba(255,255,255,0.5)
+	nav ul li a
+		margin 0 0 0 20px
+		padding 5px 80px 5px 0
+		color white
+	nav ul li:hover
+		box-shadow inset 0 50px 0 0 verde
+	nav ul li:active
+		box-shadow inset 0 50px 0 0 verde
+	
+	// opciones
+	#banner article
+		display block
+	.opciones
+		width 100%
+	.banner
+		width 100%
+		
+	// opciones
+	.item a img
+		padding 10px 0
+		margin 0 3% 0 3%
+	.item a h3
+		font-size 1.3em
+		width 59%
+		font-family Dosis
+		margin-top 17px
+	//banner
+	.banner
+		margin -57px 0 0 0
+		
+	.sheet-slider
+		height 242px
+	#carreras
+		width 0
+		height 100px
+
